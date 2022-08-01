@@ -22,3 +22,4 @@ A table with data from the SQLite database with the ability to filter fields. (u
 - Django
 - django-filter
 - django-tables2
+- SQLite
