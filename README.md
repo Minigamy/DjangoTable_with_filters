@@ -1,2 +1,24 @@
 # DjangoTable_with_filters
-A table with data from the SQLite database with the ability to filter fields. (django-tables2, django-filter)
+A table with data from the SQLite database with the ability to filter fields. (using django-tables2, django-filter)
+
+# Описание
+Данное приложение позволяет фильтровать содержимое таблицы `durations` по следующим критериям:
+ - Название клиента (выпадающий список из всех возможных клиентов + вариант Все).
+ - Название оборудования (выпадающий список из всех возможных названий + вариант Все, без разделения по клиентам).
+ - Название состояния (выпадающий список из всех возможных состояний + вариант Все).
+ - Длительность нахождения в этом состоянии, от нуля и более минут.
+ - Дата начала (в тех же полях можно фильтровать по времени).
+ - Дата окончания (в тех же полях можно фильтровать по времени).
+***
+# Порядок запуска
+1. Устанавливаем зависимости из `requirements.txt`
+2. Делаем миграции с помощью команд:  
+   `python manage.py makemigrations`  
+   `python manage.py migrate`
+3. Запускаем сервер в терминале командой `python manage.py runserver`
+4. Открываем `http://127.0.0.1:8000/` в браузере
+***
+# Стек
+- Django
+- django-filter
+- django-tables2
